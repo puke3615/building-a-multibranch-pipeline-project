@@ -12,7 +12,7 @@ pipeline {
         stage('Show') {
             steps {
                 sh 'pwd'
-                sh 'who am i'
+                sh 'whoami'
             }
         }
         stage('Build') {
