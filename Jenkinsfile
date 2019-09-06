@@ -9,6 +9,12 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('Show') {
+            steps {
+                sh 'pwd'
+                sh 'who am i'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
